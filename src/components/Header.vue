@@ -31,7 +31,7 @@
 
     <!-- closing bar -->
     <div class="flex h-9 w-full">
-      <div class="pl-10 pr-2 closing-container flex items-center">
+      <div class="pr-2 closing-container flex items-center justify-end">
         <p class="text-white uppercase text-xs font-light">closing in</p>
       </div>
       <div class="pl-4 day-container flex-grow flex items-center">
@@ -65,6 +65,7 @@ import Negative from './Icons/Negative.vue'
 }
 
 .closing-container {
+  width: 120px;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -74,5 +75,15 @@ import Negative from './Icons/Negative.vue'
 
 .bg-img-header {
   background-image: url('img/pope-francis.png');
+}
+
+@media screen and (width >= 768px) {
+  .featured-card-container {
+    width: 368px;
+  }
+
+  .closing-container {
+    width: 250px;
+  }
 }
 </style>
